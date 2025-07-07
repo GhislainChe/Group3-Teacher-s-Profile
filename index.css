@@ -18,7 +18,10 @@ body{
 .inside{
     width: 100%;
     height: 80%;
-    background-color: #8479e7;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(1494.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     padding: 10px;
 }
 
@@ -112,6 +115,7 @@ body{
 }
 
 .top .info .details .loc{
+    margin-top: 5px;
     display: flex;
     align-items: center;
     /* justify-content: center; */
@@ -153,4 +157,67 @@ body{
 
 .top .info .right button:hover{
     transform: scale(1.03);
+}
+
+@media (max-width: 725px) {
+    .inside{
+        width: 100%;
+        height: 90%;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(1494.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+    }
+
+
+    .top{
+        position:sticky;
+    }
+
+    .top .info{
+        display: flex;
+        flex-direction: column;
+        /* align-items: flex-end; */
+        /* justify-content: flex-start; */
+        /* width: 100%; */
+        position: relative;
+        padding: 0;
+        margin: 0;
+        
+    }  
+
+    .top .info .left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+    }
+
+    .top .info .profile{
+        height: 100px;
+        width: 100px;
+    }
+
+    .top .info .details .loc{
+        margin: 0;
+    }
+
+    .top .info .details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .top .info .right{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: center;
+        padding: 10px 10px;
+        gap: 15px;
+    }
+
 }
